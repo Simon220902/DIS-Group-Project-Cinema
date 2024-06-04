@@ -1,3 +1,10 @@
+Gør dette først:
+python3 -m venv venv
+
+Og så bagefter installér requirements.txt:
+pip install -r requirements.txt
+
+
 Kør følgende ting for at lave databasen:
 
 psql -U DEN_BRUGER_DU_VIL_BRUGE
