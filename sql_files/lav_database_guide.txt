@@ -1,0 +1,12 @@
+Kør følgende ting for at lave databasen:
+
+psql -U DEN_BRUGER_DU_VIL_BRUGE
+
+Inde i psql terminalen kør følgende:
+
+CREATE DATABASE cinema;
+\q
+
+Bagefter kør sql filen der laver tabellerne:
+
+psql -U DEN_BRUGER_DU_VIL_BRUGE --dbname=cinema -a -f sql_files/create_tables.sql
