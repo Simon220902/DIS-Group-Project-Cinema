@@ -20,6 +20,14 @@ class User(UserMixin):
     def __repr__(self):
         return '<User {}>'.format(self.name)
 
+def get_all_movie_titles_and_images():
+    sql = "SELECT title, poster_link FROM movies;"
+    cur = db.cursor()
+    cur.execute(sql)
+    all_rows = cur.fetchall()
+    cur.close()
+    return [{"title" : title, "poster_link":poster_link} for (title, poster_link) in list(all_rows)]
+
 def __select_user(id=None, email=None) -> Optional[User]:
     if id != None or email != None:
         if id != None:
