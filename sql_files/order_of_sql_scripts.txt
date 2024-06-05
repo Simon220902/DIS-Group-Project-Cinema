@@ -5,3 +5,6 @@ insert_stars.sql
 update_movies_director.sql
 insert_starsin.sql
 generate_synthetic_data.sql
+
+psql -U username -d databasename -q -f sql_files/create_tables.sql -f sql_files/insert_movies.sql -f sql_files/insert_directors.sql -f sql_files/insert_stars.sql -f sql_files/update_movies_director.sql -f sql_files/insert_starsin.sql -f sql_files/generate_synthetic_data.sql
+psql -U simonlykkeandersen -d cinema -q -f sql_files/create_tables.sql -f sql_files/insert_movies.sql -f sql_files/insert_directors.sql -f sql_files/insert_stars.sql -f sql_files/update_movies_director.sql -f sql_files/insert_starsin.sql -f sql_files/generate_synthetic_data.sql
