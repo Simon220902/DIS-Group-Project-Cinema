@@ -59,6 +59,11 @@ def login():
         return redirect(next_page)
     return render_template('login.html', title='Sign In', form=form)
 
+@app.route('/movies')
+def movies():
+    return render_template('movies.html', title='Movies')
+
+
 @app.route('/logout')
 def logout():
     logout_user()
