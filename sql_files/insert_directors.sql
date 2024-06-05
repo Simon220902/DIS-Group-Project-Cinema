@@ -101,6 +101,9 @@ INSERT INTO directors (name) VALUES
 ('Peter Jackson');
 
 INSERT INTO directors (name) VALUES 
+('Shin''ichirô Watanabe');
+
+INSERT INTO directors (name) VALUES 
 ('Walter Salles');
 
 INSERT INTO directors (name) VALUES 
@@ -809,6 +812,9 @@ INSERT INTO directors (name) VALUES
 ('John Huston');
 
 INSERT INTO directors (name) VALUES 
+('Gavin O''Connor');
+
+INSERT INTO directors (name) VALUES 
 ('Joss Whedon');
 
 INSERT INTO directors (name) VALUES 
@@ -834,9 +840,6 @@ INSERT INTO directors (name) VALUES
 
 INSERT INTO directors (name) VALUES 
 ('Hannes Holm');
-
-INSERT INTO directors (name) VALUES 
-('Gavin O´Connor');
 
 INSERT INTO directors (name) VALUES 
 ('J.J. Abrams');
@@ -1206,9 +1209,6 @@ INSERT INTO directors (name) VALUES
 
 INSERT INTO directors (name) VALUES 
 ('Richard Kelly');
-
-INSERT INTO directors (name) VALUES 
-('Shin´ichirô Watanabe');
 
 INSERT INTO directors (name) VALUES 
 ('Jean-Luc Godard');

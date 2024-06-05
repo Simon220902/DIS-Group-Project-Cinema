@@ -65,9 +65,6 @@ INSERT INTO stars (name) VALUES
 ('Efrem Zimbalist Jr.');
 
 INSERT INTO stars (name) VALUES 
-('Predrag ´Miki´ Manojlovic');
-
-INSERT INTO stars (name) VALUES 
 ('Julian Sands');
 
 INSERT INTO stars (name) VALUES 
@@ -207,9 +204,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Vladas Bagdonas');
-
-INSERT INTO stars (name) VALUES 
-('Paige O´Hara');
 
 INSERT INTO stars (name) VALUES 
 ('John Gielgud');
@@ -443,6 +437,9 @@ INSERT INTO stars (name) VALUES
 ('Zachary Quinto');
 
 INSERT INTO stars (name) VALUES 
+('Beverly D''Angelo');
+
+INSERT INTO stars (name) VALUES 
 ('Brooklynn Prince');
 
 INSERT INTO stars (name) VALUES 
@@ -557,7 +554,7 @@ INSERT INTO stars (name) VALUES
 ('Steve McQueen');
 
 INSERT INTO stars (name) VALUES 
-('Catherine O´Hara');
+('Brian O''Halloran');
 
 INSERT INTO stars (name) VALUES 
 ('Michael Fassbender');
@@ -579,6 +576,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Miori Takimoto');
+
+INSERT INTO stars (name) VALUES 
+('Vincent D''Onofrio');
 
 INSERT INTO stars (name) VALUES 
 ('Ezra Miller');
@@ -624,6 +624,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Joel Coen');
+
+INSERT INTO stars (name) VALUES 
+('Donald O''Connor');
 
 INSERT INTO stars (name) VALUES 
 ('Caio Junqueira');
@@ -713,16 +716,10 @@ INSERT INTO stars (name) VALUES
 ('Eddie Murphy');
 
 INSERT INTO stars (name) VALUES 
-('Jerry O´Connell');
-
-INSERT INTO stars (name) VALUES 
 ('Mara Krupp');
 
 INSERT INTO stars (name) VALUES 
 ('Patricia Neal');
-
-INSERT INTO stars (name) VALUES 
-('Chris O´Donnell');
 
 INSERT INTO stars (name) VALUES 
 ('Andrea Tariang');
@@ -834,6 +831,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Ariadna Gil');
+
+INSERT INTO stars (name) VALUES 
+('Merila Zare''i');
 
 INSERT INTO stars (name) VALUES 
 ('Anand Gandhi');
@@ -1058,6 +1058,9 @@ INSERT INTO stars (name) VALUES
 ('Akio Ôtsuka');
 
 INSERT INTO stars (name) VALUES 
+('Tung Cho ''Joe'' Cheung');
+
+INSERT INTO stars (name) VALUES 
 ('Mickey Rourke');
 
 INSERT INTO stars (name) VALUES 
@@ -1233,9 +1236,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Nick Frost');
-
-INSERT INTO stars (name) VALUES 
-('Tung Cho ´Joe´ Cheung');
 
 INSERT INTO stars (name) VALUES 
 ('Trey Parker');
@@ -1455,9 +1455,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Randy Quaid');
-
-INSERT INTO stars (name) VALUES 
-('Maureen O´Sullivan');
 
 INSERT INTO stars (name) VALUES 
 ('Bruce Bennett');
@@ -2084,6 +2081,9 @@ INSERT INTO stars (name) VALUES
 ('Christian Friedel');
 
 INSERT INTO stars (name) VALUES 
+('Maureen O''Sullivan');
+
+INSERT INTO stars (name) VALUES 
 ('Helmut Qualtinger');
 
 INSERT INTO stars (name) VALUES 
@@ -2109,9 +2109,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Je-mun Yun');
-
-INSERT INTO stars (name) VALUES 
-('Tatum O´Neal');
 
 INSERT INTO stars (name) VALUES 
 ('Alisa Freyndlikh');
@@ -2262,12 +2259,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Prateik');
-
-INSERT INTO stars (name) VALUES 
-('Ken´ichi Matsuyama');
-
-INSERT INTO stars (name) VALUES 
-('Ken´ichi Hagiwara');
 
 INSERT INTO stars (name) VALUES 
 ('Hisako Kyôda');
@@ -2492,9 +2483,6 @@ INSERT INTO stars (name) VALUES
 ('Taron Egerton');
 
 INSERT INTO stars (name) VALUES 
-('Peter O´Toole');
-
-INSERT INTO stars (name) VALUES 
 ('Jeffrey Ho');
 
 INSERT INTO stars (name) VALUES 
@@ -2586,9 +2574,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Gael García Bernal');
-
-INSERT INTO stars (name) VALUES 
-('Merila Zare´i');
 
 INSERT INTO stars (name) VALUES 
 ('Anthony Chau-Sang Wong');
@@ -2768,6 +2753,9 @@ INSERT INTO stars (name) VALUES
 ('Enrique Castillo');
 
 INSERT INTO stars (name) VALUES 
+('Maureen O''Hara');
+
+INSERT INTO stars (name) VALUES 
 ('Yesim Salkim');
 
 INSERT INTO stars (name) VALUES 
@@ -2906,9 +2894,6 @@ INSERT INTO stars (name) VALUES
 ('John Rhys-Davies');
 
 INSERT INTO stars (name) VALUES 
-('Arthur O´Connell');
-
-INSERT INTO stars (name) VALUES 
 ('Albert Finney');
 
 INSERT INTO stars (name) VALUES 
@@ -3014,6 +2999,9 @@ INSERT INTO stars (name) VALUES
 ('Anatoliy Solonitsyn');
 
 INSERT INTO stars (name) VALUES 
+('Ken''ichi Matsuyama');
+
+INSERT INTO stars (name) VALUES 
 ('Dibyendu Bhattacharya');
 
 INSERT INTO stars (name) VALUES 
@@ -3048,6 +3036,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Vanna Urbino');
+
+INSERT INTO stars (name) VALUES 
+('Shin''ichi Himori');
 
 INSERT INTO stars (name) VALUES 
 ('Miriam Shor');
@@ -3219,9 +3210,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Jacki Weaver');
-
-INSERT INTO stars (name) VALUES 
-('Zac Mattoon O´Brien');
 
 INSERT INTO stars (name) VALUES 
 ('Jim Carrey');
@@ -3401,7 +3389,7 @@ INSERT INTO stars (name) VALUES
 ('Haru Kuroki');
 
 INSERT INTO stars (name) VALUES 
-('Josh O´Connor');
+('Auli''i Cravalho');
 
 INSERT INTO stars (name) VALUES 
 ('Joel Basman');
@@ -3782,6 +3770,9 @@ INSERT INTO stars (name) VALUES
 ('Mélanie Laurent');
 
 INSERT INTO stars (name) VALUES 
+('Ileana D''Cruz');
+
+INSERT INTO stars (name) VALUES 
 ('Rosanna Arquette');
 
 INSERT INTO stars (name) VALUES 
@@ -4028,6 +4019,9 @@ INSERT INTO stars (name) VALUES
 ('Charlie Pye Jr.');
 
 INSERT INTO stars (name) VALUES 
+('Tatum O''Neal');
+
+INSERT INTO stars (name) VALUES 
 ('Danny Denzongpa');
 
 INSERT INTO stars (name) VALUES 
@@ -4203,6 +4197,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Elya Baskin');
+
+INSERT INTO stars (name) VALUES 
+('Jerry O''Connell');
 
 INSERT INTO stars (name) VALUES 
 ('Michael Murphy');
@@ -4487,6 +4484,9 @@ INSERT INTO stars (name) VALUES
 ('River Phoenix');
 
 INSERT INTO stars (name) VALUES 
+('Catherine O''Hara');
+
+INSERT INTO stars (name) VALUES 
 ('Maria Falconetti');
 
 INSERT INTO stars (name) VALUES 
@@ -4562,6 +4562,9 @@ INSERT INTO stars (name) VALUES
 ('Jeanne Bates');
 
 INSERT INTO stars (name) VALUES 
+('Chris O''Donnell');
+
+INSERT INTO stars (name) VALUES 
 ('Vince Vaughn');
 
 INSERT INTO stars (name) VALUES 
@@ -4623,9 +4626,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Chris Cooper');
-
-INSERT INTO stars (name) VALUES 
-('Maureen O´Hara');
 
 INSERT INTO stars (name) VALUES 
 ('Kiefer Sutherland');
@@ -4716,6 +4716,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Thomas Kretschmann');
+
+INSERT INTO stars (name) VALUES 
+('Paige O''Hara');
 
 INSERT INTO stars (name) VALUES 
 ('Alida Valli');
@@ -5048,9 +5051,6 @@ INSERT INTO stars (name) VALUES
 ('Mark Rylance');
 
 INSERT INTO stars (name) VALUES 
-('Donald O´Connor');
-
-INSERT INTO stars (name) VALUES 
 ('Alexandre Tharaud');
 
 INSERT INTO stars (name) VALUES 
@@ -5061,6 +5061,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Peter van Eyck');
+
+INSERT INTO stars (name) VALUES 
+('Ryan O''Neal');
 
 INSERT INTO stars (name) VALUES 
 ('Annette Bening');
@@ -5091,6 +5094,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Oka Antara');
+
+INSERT INTO stars (name) VALUES 
+('Zac Mattoon O''Brien');
 
 INSERT INTO stars (name) VALUES 
 ('Paul McCartney');
@@ -5279,6 +5285,9 @@ INSERT INTO stars (name) VALUES
 ('Charles Chaplin');
 
 INSERT INTO stars (name) VALUES 
+('Peter O''Toole');
+
+INSERT INTO stars (name) VALUES 
 ('Marlon Brando');
 
 INSERT INTO stars (name) VALUES 
@@ -5339,16 +5348,13 @@ INSERT INTO stars (name) VALUES
 ('Albert Brooks');
 
 INSERT INTO stars (name) VALUES 
-('Ileana D´Cruz');
+('Christopher Eccleston');
 
 INSERT INTO stars (name) VALUES 
 ('Henrik Lundström');
 
 INSERT INTO stars (name) VALUES 
 ('Gwilym Lee');
-
-INSERT INTO stars (name) VALUES 
-('Christopher Eccleston');
 
 INSERT INTO stars (name) VALUES 
 ('Sharon Stone');
@@ -5426,9 +5432,6 @@ INSERT INTO stars (name) VALUES
 ('Gian Maria Volontè');
 
 INSERT INTO stars (name) VALUES 
-('Beverly D´Angelo');
-
-INSERT INTO stars (name) VALUES 
 ('Sibel Kekilli');
 
 INSERT INTO stars (name) VALUES 
@@ -5462,9 +5465,6 @@ INSERT INTO stars (name) VALUES
 ('Samuel Armstrong');
 
 INSERT INTO stars (name) VALUES 
-('Vincent D´Onofrio');
-
-INSERT INTO stars (name) VALUES 
 ('Byron Barr');
 
 INSERT INTO stars (name) VALUES 
@@ -5493,6 +5493,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Jon Bernthal');
+
+INSERT INTO stars (name) VALUES 
+('Edmond O''Brien');
 
 INSERT INTO stars (name) VALUES 
 ('Rod Steiger');
@@ -5595,9 +5598,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Ajay Devgn');
-
-INSERT INTO stars (name) VALUES 
-('Brian O´Halloran');
 
 INSERT INTO stars (name) VALUES 
 ('George Segal');
@@ -5741,10 +5741,10 @@ INSERT INTO stars (name) VALUES
 ('Rusty Schwimmer');
 
 INSERT INTO stars (name) VALUES 
-('Machiko Kyô');
+('Ken''ichi Hagiwara');
 
 INSERT INTO stars (name) VALUES 
-('Auli´i Cravalho');
+('Machiko Kyô');
 
 INSERT INTO stars (name) VALUES 
 ('Billy Crystal');
@@ -5843,6 +5843,9 @@ INSERT INTO stars (name) VALUES
 ('Felicity Jones');
 
 INSERT INTO stars (name) VALUES 
+('Srdjan ''Zika'' Todorovic');
+
+INSERT INTO stars (name) VALUES 
 ('Kiyoshi Kobayashi');
 
 INSERT INTO stars (name) VALUES 
@@ -5909,6 +5912,9 @@ INSERT INTO stars (name) VALUES
 ('Marcia Gay Harden');
 
 INSERT INTO stars (name) VALUES 
+('Carroll O''Connor');
+
+INSERT INTO stars (name) VALUES 
 ('Polly Bergen');
 
 INSERT INTO stars (name) VALUES 
@@ -5942,9 +5948,6 @@ INSERT INTO stars (name) VALUES
 ('Clark Gable');
 
 INSERT INTO stars (name) VALUES 
-('Srdjan ´Zika´ Todorovic');
-
-INSERT INTO stars (name) VALUES 
 ('Teri Garr');
 
 INSERT INTO stars (name) VALUES 
@@ -5973,9 +5976,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Angie Dickinson');
-
-INSERT INTO stars (name) VALUES 
-('Ryan O´Neal');
 
 INSERT INTO stars (name) VALUES 
 ('Ji-Eun Lim');
@@ -6143,9 +6143,6 @@ INSERT INTO stars (name) VALUES
 ('Ruth Hussey');
 
 INSERT INTO stars (name) VALUES 
-('O´Shea Jackson Jr.');
-
-INSERT INTO stars (name) VALUES 
 ('Gene Tierney');
 
 INSERT INTO stars (name) VALUES 
@@ -6162,9 +6159,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Chieko Baishô');
-
-INSERT INTO stars (name) VALUES 
-('Carroll O´Connor');
 
 INSERT INTO stars (name) VALUES 
 ('Kevin Costner');
@@ -6569,9 +6563,6 @@ INSERT INTO stars (name) VALUES
 ('Tsutomu Yamazaki');
 
 INSERT INTO stars (name) VALUES 
-('Judith O´Dea');
-
-INSERT INTO stars (name) VALUES 
 ('Art Parkinson');
 
 INSERT INTO stars (name) VALUES 
@@ -6627,6 +6618,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('You Ge');
+
+INSERT INTO stars (name) VALUES 
+('George O''Brien');
 
 INSERT INTO stars (name) VALUES 
 ('Robert Hays');
@@ -6711,6 +6705,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Dylan Baker');
+
+INSERT INTO stars (name) VALUES 
+('Josh O''Connor');
 
 INSERT INTO stars (name) VALUES 
 ('Jane Darwell');
@@ -6827,9 +6824,6 @@ INSERT INTO stars (name) VALUES
 ('Mandy Patinkin');
 
 INSERT INTO stars (name) VALUES 
-('George O´Brien');
-
-INSERT INTO stars (name) VALUES 
 ('Anthony Michael Hall');
 
 INSERT INTO stars (name) VALUES 
@@ -6846,9 +6840,6 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Frank Lovejoy');
-
-INSERT INTO stars (name) VALUES 
-('Edmond O´Brien');
 
 INSERT INTO stars (name) VALUES 
 ('Connie Nielsen');
@@ -7199,6 +7190,9 @@ INSERT INTO stars (name) VALUES
 ('Jessica Chastain');
 
 INSERT INTO stars (name) VALUES 
+('Arthur O''Connell');
+
+INSERT INTO stars (name) VALUES 
 ('Oscar Isaac');
 
 INSERT INTO stars (name) VALUES 
@@ -7403,6 +7397,9 @@ INSERT INTO stars (name) VALUES
 ('Chris Evans');
 
 INSERT INTO stars (name) VALUES 
+('O''Shea Jackson Jr.');
+
+INSERT INTO stars (name) VALUES 
 ('Taapsee Pannu');
 
 INSERT INTO stars (name) VALUES 
@@ -7526,9 +7523,6 @@ INSERT INTO stars (name) VALUES
 ('Ernst Jacobi');
 
 INSERT INTO stars (name) VALUES 
-('Shin´ichi Himori');
-
-INSERT INTO stars (name) VALUES 
 ('Josef Altin');
 
 INSERT INTO stars (name) VALUES 
@@ -7635,6 +7629,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Diane Venora');
+
+INSERT INTO stars (name) VALUES 
+('Judith O''Dea');
 
 INSERT INTO stars (name) VALUES 
 ('Jonathan Rhys Meyers');
@@ -8106,6 +8103,9 @@ INSERT INTO stars (name) VALUES
 
 INSERT INTO stars (name) VALUES 
 ('Hilary Swank');
+
+INSERT INTO stars (name) VALUES 
+('Predrag ''Miki'' Manojlovic');
 
 INSERT INTO stars (name) VALUES 
 ('Madeline Kahn');

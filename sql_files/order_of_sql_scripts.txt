@@ -1,0 +1,6 @@
+create_tables.sql
+insert_movies.sql
+insert_directors.sql
+insert_stars.sql
+update_movies_director.sql
+insert_starsin.sql
