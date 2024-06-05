@@ -3,7 +3,7 @@ from app import app, db
 from app.forms import LoginForm, RegistrationForm
 import psycopg
 from flask_login import current_user, login_user, logout_user, login_required
-from app.models import User, select_user_by_username, insert_user
+from app.models import User, select_user_by_email, insert_user
 from urllib.parse import urlsplit
 
 @app.route('/')
@@ -12,11 +12,11 @@ from urllib.parse import urlsplit
 def index():
     posts = [
         {
-            'author': {'username': 'John'},
+            'author': {'name': 'John'},
             'body': 'Beautiful day in Portland!'
         },
         {
-            'author': {'username': 'Susan'},
+            'author': {'name': 'Susan'},
             'body': 'The Avengers movie was so cool!'
         }
     ]
@@ -48,9 +48,9 @@ def login():
         return redirect(url_for('index'))
     form = LoginForm()
     if form.validate_on_submit():
-        user = select_user_by_username(form.username.data)
+        user = select_user_by_email(form.email.data)
         if user is None or not user.check_password(form.password.data):
-            flash('Invalid username or password')
+            flash('Invalid email-address or password')
             return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
         next_page = request.args.get('next')
@@ -70,7 +70,7 @@ def register():
         return redirect(url_for('index'))
     form = RegistrationForm()
     if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data)
+        user = User(name=form.name.data, email=form.email.data)
         user.set_password(form.password.data)
         insert_user(user)
         flash('Congratulations, you are now a registered user!')
