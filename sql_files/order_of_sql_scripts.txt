@@ -4,3 +4,4 @@ insert_directors.sql
 insert_stars.sql
 update_movies_director.sql
 insert_starsin.sql
+generate_synthetic_data.sql

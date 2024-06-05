@@ -67,9 +67,7 @@ def movies():
     
     rows = [movies[i:i + 3] for i in range(0, len(movies), 3)]
 
-    return render_template('movies.html', movie_name="movie_name", rows=rows)
-
-
+    return render_template('movies.html', rows=rows)
 
 @app.route('/logout')
 def logout():
