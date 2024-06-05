@@ -5,9 +5,9 @@ from flask_login import UserMixin
 from werkzeug.security import generate_password_hash, check_password_hash
 
 class User(UserMixin):
-    def __init__(self, username, email, id=None, password_hash=None):
+    def __init__(self, name, email, id=None, password_hash=None):
         self.id = id
-        self.username = username
+        self.name = name
         self.email = email
         self.password_hash = password_hash
     
@@ -18,16 +18,14 @@ class User(UserMixin):
         return check_password_hash(self.password_hash, password)
 
     def __repr__(self):
-        return '<User {}>'.format(self.username)
+        return '<User {}>'.format(self.name)
 
-def __select_user(id=None, username=None, email=None) -> Optional[User]:
-    if id != None or username != None or email != None:
+def __select_user(id=None, email=None) -> Optional[User]:
+    if id != None or email != None:
         if id != None:
-            sql = f"SELECT (id, username, email, password_hash) FROM users WHERE id = {id}"
-        elif username != None:
-            sql = f"SELECT (id, username, email, password_hash) FROM users WHERE username = '{username}'"
+            sql = f"SELECT (id, name, email, password_hash) FROM users WHERE id = {id}"
         elif email != None:
-            sql = f"SELECT (id, username, email, password_hash) FROM users WHERE email = '{email}'"
+            sql = f"SELECT (id, name, email, password_hash) FROM users WHERE email = '{email}'"
         cur = db.cursor()
         cur.execute(sql)
         data_row = cur.fetchone()
@@ -35,21 +33,18 @@ def __select_user(id=None, username=None, email=None) -> Optional[User]:
         if data_row == None:
             return None
         else:
-            ((id, username, email, password_hash),) = data_row
-            user = User(username=username, email=email)
+            ((id, name, email, password_hash),) = data_row
+            user = User(name=name, email=email)
             user.id = id
             user.password_hash = password_hash
         return user
     else:
-        print("! YOU HAVE TO SPECIFY EITHER AN ID, USERNAME OR EMAIL !")
+        print("! YOU HAVE TO SPECIFY EITHER AN ID OR EMAIL !")
         return None
 
 @login.user_loader
 def select_user_by_id(id) -> Optional[User]:
     return __select_user(id=id)
-
-def select_user_by_username(username) -> Optional[User]:
-    return __select_user(username=username)
 
 def select_user_by_email(email) -> Optional[User]:
     return __select_user(email=email)
@@ -57,8 +52,8 @@ def select_user_by_email(email) -> Optional[User]:
 def insert_user(user):
     if user != None and type(user) == User and user.password_hash != None:
         cur = db.cursor()
-        sql = f"""INSERT INTO users (username, email, password_hash)
-                  VALUES ('{user.username}', '{user.email}', '{user.password_hash}')"""
+        sql = f"""INSERT INTO users (name, email, password_hash)
+                  VALUES ('{user.name}', '{user.email}', '{user.password_hash}')"""
         cur.execute(sql)
         db.commit()
         cur.close()
