@@ -2,4 +2,18 @@
 
 {% block content %}
     <h1>Movies</h1>
+    <p>{{ movie_name }}</p>
+    
+    <div class="gallery">
+        {% for row in rows %}
+            <div class="row">
+                {% for movie in row %}
+                    <div class="image-container">
+                        <img src="{{ movie['poster_link'] }}" alt="Image">
+                        <p>{{movie['title'] }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}

@@ -1,0 +1,11 @@
+.row {
+    display: flex;
+}
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+}

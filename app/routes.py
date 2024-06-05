@@ -3,7 +3,7 @@ from app import app, db
 from app.forms import LoginForm, RegistrationForm
 import psycopg
 from flask_login import current_user, login_user, logout_user, login_required
-from app.models import User, select_user_by_email, insert_user
+from app.models import User, select_user_by_email, insert_user, get_all_movie_titles_and_images
 from urllib.parse import urlsplit
 
 @app.route('/')
@@ -61,7 +61,14 @@ def login():
 
 @app.route('/movies')
 def movies():
-    return render_template('movies.html', title='Movies')
+    movies = get_all_movie_titles_and_images()
+    movie_titles = list(map(lambda d: d["title"], movies[:9]))
+    image_urls = list(map(lambda d: d["poster_link"], movies[:9]))
+    
+    rows = [movies[i:i + 3] for i in range(0, len(movies), 3)]
+
+    return render_template('movies.html', movie_name="movie_name", rows=rows)
+
 
 
 @app.route('/logout')
