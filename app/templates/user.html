@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <script>
+        function changeVisibilityOfSubmit(){
+            let some_checked = false;
+            document.getElementsByName("reservation-delete-checkbox").forEach(checkbox => {
+                    some_checked = some_checked || checkbox.checked;
+            });
+            document.getElementById("reservation-delete-submit").disabled = !some_checked;
+        }
+    </script>
+    <h1>Hi, {{ current_user.name }}!</h1>
+    <form action="" method="post" novalidate>
+    {% for reservation in reservations %}
+    <h4>Reservation:</h4>
+    <table>
+        <tr>
+            <td>Movie:</td>
+            <td>{{ reservation.movie.title }}</td>
+        </tr>
+        <tr>
+            <td>Date, start and end time:</td>
+            <td>{{ reservation.showing.showing_date }} {{ reservation.showing.start_time }}-{{ reservation.showing.end_time }}</td>
+        </tr>
+        <tr>
+            <td>Seats (row, number):</td>
+            <td>{{ reservation.seats }}</td>
+        </tr>
+    </table>
+    <input type="checkbox" id="{{reservation.id}}" value="{{reservation.id}}" name="reservation-delete-checkbox" onclick="changeVisibilityOfSubmit();">
+    <label>Mark reservation for deletion.</label>
+    <br>
+    {% endfor %}
+    <button type="submit" id="reservation-delete-submit" disabled>Delete reservation</button>
+    </form>
+{% endblock %}

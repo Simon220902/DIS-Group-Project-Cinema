@@ -100,27 +100,6 @@ CREATE TABLE seat_reservations
 );
 
 -- /*
--- AFTER:  {'Poster_Link': (146, 'https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg'),
---          'Series_Title': (68, 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb'),
---          'Released_Year': (4, '1994'),
---          'Certificate': (8, 'Approved'),
---          'Runtime': (7, '142 min'),
---          ---'Genre': (29, 'Animation, Adventure, Fantasy'),
---          --'IMDB_Rating': (3, '9.3'),
---          'Overview': (313, "As adults, best friends Julien and Sophie continue the odd game they started as children -- a fearless competition to outdo one another with daring and outrageous stunts. While they often act out to relieve one another's pain, their game might be a way to avoid the fact that they are truly meant for one another."),
---          'Meta_score': (3, '100'),
---          'Director': (32, 'Florian Henckel von Donnersmarck'),
---          'Star1': (25, "Predrag 'Miki' Manojlovic"),
---          'Star2': (25, 'Mélissa Désormeaux-Poulin'),
---          'Star3': (27, 'Boluwatife Treasure Bankole'),
---          'Star4': (27, 'Mary Elizabeth Mastrantonio'),
---          --'No_of_Votes': (7, '2343110'),
---          --'Gross': (11, '134,966,411')
---         }
--- */
-
-
--- /*
 --     Tables to be made: [In general in our ER-diagram we do not have IDs though that is a good idea.]
 --     - Users(id, name, email, password) [Username not in our ER-diagram]
 --     - Movies(id, title, poster_link, certificate, meta_score, runtime, overview, director_id)

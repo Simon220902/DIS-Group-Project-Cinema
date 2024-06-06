@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Showing: {{ movie_shown.title }}</h1>
+    <img src="{{ movie_shown.poster_link }}" alt="Image">
+    <h2>In Theater {{ showing.theater.num }} at {{ showing.showing_date }} starting at {{ showing.start_time }} ending at {{ showing.end_time }}</h2>
+    <form action="" method="post" novalidate>
+    <table>
+    {% for (row, seats) in row_seat_dict.items() %}
+      <tr>
+        <td>{{row}}</td>
+        {% for (seat_id, num) in seats %}
+            {% if seat_id in showing.reserved_seats %}
+                <!-- <td>R {{ (seat_id, num) }}</td> -->
+                <td><input type="checkbox" id="{{ seat_id }}" name="{{ seat_id }}" disabled value="{{ seat_id }}" class="custom-checkbox"></td>
+            {% else %}
+                <!-- <td>A {{ (seat_id, num) }}</td> -->
+                <td><input type="checkbox" id="{{ seat_id }}" name="{{ seat_id }}" value="{{ seat_id }}" class="custom-checkbox"></td>
+            {% endif %}
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </table>
+    <button type="submit">Reserve</button>
+    </form>
+
+{% endblock %}

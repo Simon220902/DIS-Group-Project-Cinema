@@ -9,3 +9,47 @@
     width: 100%;
     height: auto;
 }
+.green-box {
+    display: block; /* Make each link a block element */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 15px 25px; /* Some padding */
+    margin: 10px;
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 15px; /* Rounded corners */
+}
+.green-box:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* General checkbox style */
+.custom-checkbox {
+    width: 20px; /* Adjust size as needed */
+    height: 20px; /* Adjust size as needed */
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* Remove default styling for Safari */
+    border: 1px solid #000; /* Optional: Add a border */
+    cursor: pointer; /* Pointer cursor for enabled checkboxes */
+    display: inline-block;
+    position: relative;
+}
+
+/* Checked state style */
+.custom-checkbox:checked {
+    background-color: blue; /* Background color when checked */
+}
+
+.custom-checkbox:disabled {
+    cursor: not-allowed; /* Show not-allowed cursor */
+    background-color: red; /* Background color when checked */
+}
+/* Additional style for checked state to show a checkmark */
+.custom-checkbox:checked::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 12px; /* Adjust size as needed */
+    height: 12px; /* Adjust size as needed */
+}

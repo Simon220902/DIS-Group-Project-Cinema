@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Reservation: showing id: {{ showing_id }} AND seats: {{ seats }}</h1>
+    <table>
+        <tr>
+            <td>Movie:</td>
+            <td>{{ movie_title }}</td>
+        </tr>
+        <tr>
+            <td>Date, start and end time:</td>
+            <td>{{ date }} {{ start_time }}-{{ end_time }}</td>
+        </tr>
+        <tr>
+            <td>Seats (row, number):</td>
+            <td>{{ seats_row_number }}</td>
+        </tr>
+    </table>
+    <form action="" method="post" novalidate>
+    <button type="submit">Confirm</button>
+    </form>
+{% endblock %}

@@ -6,10 +6,12 @@
         {% for row in rows %}
             <div class="row">
                 {% for movie in row %}
+                <a href="{{ url_for('movie', movie_id=movie['id']) }}">
                     <div class="image-container">
                         <img src="{{ movie['poster_link'] }}" alt="Image">
                         <p>{{movie['title'] }}</p>
                     </div>
+                </a>
                 {% endfor %}
             </div>
         {% endfor %}

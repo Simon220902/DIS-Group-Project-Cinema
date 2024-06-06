@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{movie.title}}</h1>
+    <img src="{{ movie.poster_link }}" alt="Image">
+    <p>{{ movie.overview }}</p>
+    <!-- self.id = id -->
+        <!-- self.title = title
+        self.poster_link = poster_link
+        self.certificate = certificate
+        self.meta_score = meta_score
+        self.runtime = runtime
+        self.overview = overview
+        self.director_id = director_id
+        self.director_name = director_name -->
+    <table>
+        <tr>
+            <td><b>Certificate:</b></td>
+            <td>{{ movie.certificate }}</td>
+        </tr>
+        <tr>
+            <td><b>Meta score:</b></td>
+            <td>{{ movie.meta_score }}</td>
+        </tr>
+        <tr>
+            <td><b>Runtime:</b></td>
+            <td>{{ movie.runtime }}</td>
+        </tr>
+        <tr>
+            <td><b>Director name:</b></td>
+            <td>{{ movie.director_name }}</td>
+        </tr>
+        <tr>
+            <td><b>Stars:</b></td>
+            <td>{{ movie.stars | map(attribute='name') | join(', ') }}</td>
+            
+        </tr>
+    </table>
+    <h2>Showings:</h2>
+    {% for showing in showings %}
+        <a href="{{ url_for('showing', showing_id=showing.id) }}" class="green-box"><b>{{ showing.prettyString() }}</b></a>
+    {% endfor %}
+{% endblock %}
