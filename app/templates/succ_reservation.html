@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Confirm Reservation</h1>
+    <h1>Your reservation as seen below has been saved:</h1>
     <table>
         <tr>
             <td>Movie:</td>
@@ -16,7 +16,5 @@
             <td>{{ seats_row_number }}</td>
         </tr>
     </table>
-    <form action="" method="post" novalidate>
-    <button type="submit">Confirm</button>
-    </form>
+    <a href="{{ url_for('user', user_id=current_user.get_id()) }}">Go to reservations</a>
 {% endblock %}

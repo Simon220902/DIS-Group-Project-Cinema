@@ -10,6 +10,7 @@
                     <div class="image-container">
                         <img src="{{ movie['poster_link'] }}" alt="Image">
                         <p>{{movie['title'] }}</p>
+                        <p>Earliest showing: {{ movie['earliest_showing'] }}</p>
                     </div>
                 </a>
                 {% endfor %}

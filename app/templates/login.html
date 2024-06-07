@@ -21,5 +21,11 @@
         <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
         <p>{{ form.submit() }}</p>
     </form>
-    <p>New User? <a href="{{ url_for('register') }}">Click to Register!</a></p>
+    {% if request.args.get("next") %}
+        {% set register_url = url_for('register', next=request.args.get("next")) %}
+    {% else %}
+        {% set register_url = url_for('register') %}
+    {% endif %}
+    <p>New User? <a href="{{ register_url }}">Click to Register!</a></p>
+    
 {% endblock %}

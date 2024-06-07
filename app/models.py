@@ -173,20 +173,20 @@ def get_seats_row_number_from_ids(seat_ids):
 
 
 def get_all_showings_for_movie_id(movie_id):
-    sql = f"SELECT showings.id, showing_date, start_time, end_time, movie_id, theater_id, theaters.num FROM showings, theaters WHERE movie_id = {movie_id} AND theaters.id = showings.theater_id;"
+    sql = f"SELECT showings.id, showing_date, start_time, end_time, movie_id, theater_id, theaters.num FROM showings, theaters WHERE movie_id = {movie_id} AND theaters.id = showings.theater_id ORDER BY showing_date, start_time;"
     cur = db.cursor()
     cur.execute(sql)
     all_rows = cur.fetchall()
     cur.close()
     return [Showing(id,date,start,end,movie_id,Theater(theater_id, theater_num)) for (id, date, start, end, movie_id, theater_id, theater_num) in all_rows]
 
-def get_all_movies_id_title_and_image():
-    sql = "SELECT DISTINCT movies.id, title, poster_link FROM movies, showings WHERE movies.id = showings.movie_id;"
+def get_all_movies_id_title_and_image_with_a_showing_ordered_by_date():
+    sql = "SELECT movies.id AS movie_id, movies.title, movies.poster_link, MIN(showings.showing_date + showings.start_time) AS earliest_showing_datetime FROM movies JOIN showings ON movies.id = showings.movie_id GROUP BY movies.id, movies.title, movies.poster_link ORDER BY earliest_showing_datetime;"
     cur = db.cursor()
     cur.execute(sql)
     all_rows = cur.fetchall()
     cur.close()
-    return [{"id": id, "title" : title, "poster_link":poster_link} for (id, title, poster_link) in list(all_rows)]
+    return [{"id": id, "title" : title, "poster_link":poster_link, "earliest_showing":earliest_showing} for (id, title, poster_link, earliest_showing) in list(all_rows)]
 
 def __select_user(id=None, email=None) -> Optional[User]:
     if id != None or email != None:
@@ -229,6 +229,81 @@ def insert_user(user):
     else:
         print("! INSERT NOT DONE !")
         print(f"User was either None or not a User or password was not set. user = {user}")
+
+def does_showing_exist(showing_id):
+    cur = db.cursor()
+    sql = f"SELECT id FROM showings WHERE showings.id = {showing_id}"
+    cur.execute(sql)
+    got_id = cur.fetchone()
+    retbool = got_id != None# and got_id == showing_id
+    retmsg = ""
+    if not retbool: 
+        retmsg = f"Showing with id={showing_id} does not exists\n"
+    return (retbool, retmsg)
+    
+
+def is_seat_unreserved(seat_id, showing_id):
+    cur = db.cursor()
+    sql = f"SELECT seat_id FROM seat_reservations, reservations WHERE seat_id = {seat_id} AND reservations.id = reservation_id AND reservations.showing_id = {showing_id}"
+    cur.execute(sql)
+    got_id = cur.fetchone()
+    cur.close()
+    retbool = got_id == None
+    retmsg = ""
+    if not retbool:
+        retmsg = retmsg + f"Seat with id={seat_id} is reserved\n"
+    return (retbool, retmsg)
+
+def are_seats_unreserved(seat_ids, showing_id):
+    retbool = True
+    retmsg = ""
+    for seat_id in seat_ids:
+        (bool1, msg1) = is_seat_unreserved(seat_id, showing_id)
+        retbool = retbool and bool1
+        retmsg = retmsg + msg1
+    return (retbool, retmsg)
+
+def find_theater_by_showing(showing_id):
+    cur = db.cursor()
+    sql = f"SELECT theater_id FROM showings WHERE id = {showing_id}"
+    cur.execute(sql)
+    theater_id = cur.fetchone()
+    cur.close()
+    if theater_id == None:
+        raise Exception("Couldn't find theater from showing id")
+    (retval,) = theater_id
+    return retval
+
+def is_seat_valid(seat_id, showing_id):
+    theater_id = find_theater_by_showing(showing_id)
+    cur = db.cursor()
+    sql = f"SELECT id FROM seats WHERE id = {seat_id} AND theater_id = {theater_id}"
+    cur.execute(sql)
+    got_id = cur.fetchone()
+    cur.close()
+    retbool = got_id != None
+    retmsg = ""
+    if not retbool:
+        retmsg = retmsg + f"Seat with id={seat_id} in theater with id = {theater_id} does not exist\n"
+    return (retbool, retmsg)
+
+
+def are_seats_valid(seat_ids, showing_id):
+    retbool = True
+    retmsg = ""
+    for seat_id in seat_ids:
+        (bool1, msg1) = is_seat_valid(seat_id, showing_id)
+        retbool = retbool and bool1
+        retmsg = retmsg + msg1
+    return (retbool, retmsg)
+
+def is_reservation_valid(showing_id, seat_ids):
+    (bool1, msg1) = does_showing_exist(showing_id)
+    (bool2, msg2) = are_seats_valid(seat_ids, showing_id)
+    (bool3, msg3) = are_seats_unreserved(seat_ids, showing_id)
+    retbool = bool1 and bool2 and bool3
+    retmsg = "\n" + msg1 + "\n" + msg2 + "\n" + msg3
+    return (retbool, retmsg)
 
 def insert_seat_reservation(seat_id, reservation_id):
     sql = f"INSERT INTO seat_reservations (seat_id, reservation_id) VALUES ({seat_id}, {reservation_id})"

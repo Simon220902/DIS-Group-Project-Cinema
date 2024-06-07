@@ -2,6 +2,7 @@
 
 {% block content %}
     <script>
+        window.onload = changeVisibilityOfSubmit;
         function changeVisibilityOfSubmit(){
             let some_checked = false;
             document.getElementsByName("reservation-delete-checkbox").forEach(checkbox => {

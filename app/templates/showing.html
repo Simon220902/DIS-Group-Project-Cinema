@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <script>
+      window.onload = changeVisibilityOfSubmit;
+      function changeVisibilityOfSubmit(){
+          let some_checked = false;
+          document.getElementsByName("available-seat-checkbox").forEach(checkbox => {
+                  some_checked = some_checked || checkbox.checked;
+          });
+          document.getElementById("reserve-submit").disabled = !some_checked;
+      }
+    </script>
     <h1>Showing: {{ movie_shown.title }}</h1>
     <img src="{{ movie_shown.poster_link }}" alt="Image">
     <h2>In Theater {{ showing.theater.num }} at {{ showing.showing_date }} starting at {{ showing.start_time }} ending at {{ showing.end_time }}</h2>
@@ -12,16 +22,16 @@
         {% for (seat_id, num) in seats %}
             {% if seat_id in showing.reserved_seats %}
                 <!-- <td>R {{ (seat_id, num) }}</td> -->
-                <td><input type="checkbox" id="{{ seat_id }}" name="{{ seat_id }}" disabled value="{{ seat_id }}" class="custom-checkbox"></td>
+                <td><input type="checkbox" id="{{ seat_id }}" name="non-available-seat-checkbox" disabled value="{{ seat_id }}" class="custom-checkbox"></td>
             {% else %}
                 <!-- <td>A {{ (seat_id, num) }}</td> -->
-                <td><input type="checkbox" id="{{ seat_id }}" name="{{ seat_id }}" value="{{ seat_id }}" class="custom-checkbox"></td>
+                <td><input type="checkbox" id="{{ seat_id }}" name="available-seat-checkbox" onclick="changeVisibilityOfSubmit();" value="{{ seat_id }}" class="custom-checkbox"></td>
             {% endif %}
         {% endfor %}
       </tr>
     {% endfor %}
     </table>
-    <button type="submit">Reserve</button>
+    <button type="submit" id="reserve-submit" disabled>Reserve</button>
     </form>
 
 {% endblock %}
