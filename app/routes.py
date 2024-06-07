@@ -110,9 +110,16 @@ def register():
         user.set_password(form.password.data)
         model.insert_user(user)
         flash('Congratulations, you are now a registered user!')
-        next = request.args.get("next")
-        if next:
-            return redirect(url_for('login', next=next))
-        else:
-            return redirect(url_for('login'))
+        #Login
+        user = model.select_user_by_email(form.email.data)
+        login_user(user, remember=False)
+        next_page = request.args.get('next')
+        if not next_page or urlsplit(next_page).netloc != '':
+            next_page = url_for('movies')
+        return redirect(next_page)
+        # next = request.args.get("next")
+        # if next:
+        #     return redirect(url_for('login', next=next))
+        # else:
+        #     return redirect(url_for('login'))
     return render_template('register.html', title='Register', form=form)
