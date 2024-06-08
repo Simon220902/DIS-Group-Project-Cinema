@@ -1,5 +1,5 @@
 # DIS Group project: Cinema reservation page
-### By Mark Brandt {jvq317}, Rasmus Kiel {zch403} & Simon Lykke Andersen {sxd682}
+##### By Mark Brandt {jvq317}, Rasmus Kiel {zch403} & Simon Lykke Andersen {sxd682}.
 
 ## ER-diagram
 ![ER_DIS_cinema.png](/ER_DIS_cinema.png)
@@ -12,7 +12,7 @@ Run the code below to install the necessary modules.
 
 
 ### Database init
-1. Replace {username} with your database username and {databasename} with the name of your database in \_\_init\_\_.py file.
+1. Replace {username} with your database username and {databasename} with the name of your database in `app/__init__.py` file.
 2. Run the sql files replacing {username} with your database username and {databasename} with the name of your database in the below collective statement.
 
 Collected psql statement:
@@ -20,13 +20,8 @@ Collected psql statement:
     psql -U {username} -d {databasename} -q -f sql_files/create_tables.sql -f sql_files/insert_movies.sql -f sql_files/insert_directors.sql -f sql_files/insert_stars.sql -f sql_files/update_movies_director.sql -f sql_files/insert_starsin.sql -f sql_files/generate_synthetic_data.sql
    
 ### Running flask
-#### The python way
 
-    python3 run.py
-
-#### The flask way.
-
-    export FLASK_APP=run.py
+    export FLASK_APP=cinema.py
     flask run
 
 ### How to use
