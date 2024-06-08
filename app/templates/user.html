@@ -21,6 +21,10 @@
             <td>{{ reservation.movie.title }}</td>
         </tr>
         <tr>
+            <td>Theater No.:</td>
+            <td>{{ reservation.showing.theater.num }}</td>
+        </tr>
+        <tr>
             <td>Date, start and end time:</td>
             <td>{{ reservation.showing.showing_date }} {{ reservation.showing.start_time }}-{{ reservation.showing.end_time }}</td>
         </tr>

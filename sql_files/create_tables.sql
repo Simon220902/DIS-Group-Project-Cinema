@@ -9,7 +9,6 @@ DROP TABLE IF EXISTS showings CASCADE;
 DROP TABLE IF EXISTS reservations CASCADE;
 DROP TABLE IF EXISTS seat_reservations CASCADE;
 
-
 CREATE TABLE users
 (
     id SERIAL PRIMARY KEY,
@@ -48,8 +47,8 @@ CREATE TABLE stars_in
     star_id INT NOT NULL,
     movie_id INT NOT NULL,
     PRIMARY KEY (star_id, movie_id),
-    FOREIGN KEY (star_id) REFERENCES stars (id),
-    FOREIGN KEY (movie_id) REFERENCES movies (id)
+    FOREIGN KEY (star_id) REFERENCES stars (id) ON DELETE CASCADE,
+    FOREIGN KEY (movie_id) REFERENCES movies (id) ON DELETE CASCADE
 );
 
 
@@ -65,7 +64,7 @@ CREATE TABLE seats
     theater_id INT NOT NULL,
     row INT NOT NULL,
     num INT NOT NULL,
-    FOREIGN KEY (theater_id) REFERENCES theaters (id),
+    FOREIGN KEY (theater_id) REFERENCES theaters (id) ON DELETE CASCADE,
     UNIQUE (theater_id, row, num)
 );
 
@@ -77,8 +76,8 @@ CREATE TABLE showings
     end_time TIME NOT NULL,
     movie_id INT NOT NULL,
     theater_id INT NOT NULL,
-    FOREIGN KEY (movie_id) REFERENCES movies (id),
-    FOREIGN KEY (theater_id) REFERENCES theaters (id)
+    FOREIGN KEY (movie_id) REFERENCES movies (id) ON DELETE CASCADE,
+    FOREIGN KEY (theater_id) REFERENCES theaters (id) ON DELETE CASCADE
 );
 
 CREATE TABLE reservations
@@ -86,8 +85,8 @@ CREATE TABLE reservations
     id SERIAL PRIMARY KEY,
     user_id INT NOT NULL,
     showing_id INT NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users (id),
-    FOREIGN KEY (showing_id) REFERENCES showings (id)
+    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE,
+    FOREIGN KEY (showing_id) REFERENCES showings (id) ON DELETE CASCADE
 );
 
 CREATE TABLE seat_reservations
@@ -95,20 +94,6 @@ CREATE TABLE seat_reservations
     seat_id INT NOT NULL,
     reservation_id INT NOT NULL,
     PRIMARY KEY (seat_id, reservation_id),
-    FOREIGN KEY (seat_id) REFERENCES seats (id),
-    FOREIGN KEY (reservation_id) REFERENCES reservations (id)
+    FOREIGN KEY (seat_id) REFERENCES seats (id) ON DELETE CASCADE,
+    FOREIGN KEY (reservation_id) REFERENCES reservations (id) ON DELETE CASCADE
 );
-
--- /*
---     Tables to be made: [In general in our ER-diagram we do not have IDs though that is a good idea.]
---     - Users(id, name, email, password) [Username not in our ER-diagram]
---     - Movies(id, title, poster_link, certificate, meta_score, runtime, overview, director_id)
---     - Stars(id, name)
---         - StarsIn(star_id, movie_id)
---     - Directors(id, name)
---     - Showings(id, date, start, end, movie_id, theater_id)
---     - Theaters(id, name)
---     - Seats(id, theater_id, row, num)
---     - Reservations(id, user_id, showing_id)
---         - SeatReservations(seat_id, reservation_id)
--- */

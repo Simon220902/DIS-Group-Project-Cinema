@@ -1349,647 +1349,643 @@ INSERT INTO seats (theater_id, row, num) VALUES
 -- THEATER 1 SHOWINGS SYNTHETIC DATA
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '12:00:00', '14:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Se7en' AND theaters.num = 1;
+SELECT DATE '2024-06-10', '12:00:00', '13:37:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lifeboat' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '14:45:00', '16:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'This Is Spinal Tap' AND theaters.num = 1;
+SELECT DATE '2024-06-10', '14:15:00', '16:33:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Jab We Met' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '16:45:00', '19:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Harry Potter and the Prisoner of Azkaban' AND theaters.num = 1;
+SELECT DATE '2024-06-10', '17:15:00', '19:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Kaguyahime no monogatari' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '19:45:00', '21:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Lion in Winter' AND theaters.num = 1;
+SELECT DATE '2024-06-10', '20:15:00', '22:39:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Das weiße Band - Eine deutsche Kindergeschichte' AND theaters.num = 1;
 
 
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '12:00:00', '14:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Platoon' AND theaters.num = 1;
+SELECT DATE '2024-06-11', '12:00:00', '14:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Se7en' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '14:30:00', '15:42:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Circus' AND theaters.num = 1;
+SELECT DATE '2024-06-11', '14:45:00', '16:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Jaws' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '16:15:00', '18:31:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Matrix' AND theaters.num = 1;
+SELECT DATE '2024-06-11', '17:30:00', '19:14:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Get Out' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '19:15:00', '21:52:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Zodiac' AND theaters.num = 1;
+SELECT DATE '2024-06-11', '19:45:00', '21:06:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Pâfekuto burû' AND theaters.num = 1;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-11', '21:45:00', '23:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Detachment' AND theaters.num = 1;
 
 
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '12:00:00', '14:12:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Brazil' AND theaters.num = 1;
+SELECT DATE '2024-06-12', '12:00:00', '13:45:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'In America' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '14:45:00', '17:08:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Tengoku to jigoku' AND theaters.num = 1;
+SELECT DATE '2024-06-12', '14:15:00', '16:08:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Charade' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '17:45:00', '20:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Cinderella Man' AND theaters.num = 1;
+SELECT DATE '2024-06-12', '16:45:00', '19:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'A Beautiful Mind' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '20:45:00', '23:21:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Revenant' AND theaters.num = 1;
+SELECT DATE '2024-06-12', '19:30:00', '22:08:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Fitzcarraldo' AND theaters.num = 1;
 
 
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '12:00:00', '13:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Coraline' AND theaters.num = 1;
+SELECT DATE '2024-06-13', '12:00:00', '14:36:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Scent of a Woman' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '14:15:00', '16:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Argo' AND theaters.num = 1;
+SELECT DATE '2024-06-13', '15:15:00', '17:34:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Apocalypto' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '16:45:00', '18:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'First Blood' AND theaters.num = 1;
+SELECT DATE '2024-06-13', '18:15:00', '20:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Die Hard: With a Vengeance' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '19:00:00', '21:02:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Auf der anderen Seite' AND theaters.num = 1;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '21:45:00', '23:44:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Deadpool 2' AND theaters.num = 1;
+SELECT DATE '2024-06-13', '21:00:00', '23:04:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ordinary People' AND theaters.num = 1;
 
 
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '12:00:00', '14:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Zulu' AND theaters.num = 1;
+SELECT DATE '2024-06-14', '12:00:00', '13:53:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Butterfly Effect' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '15:00:00', '16:52:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Escape from Alcatraz' AND theaters.num = 1;
+SELECT DATE '2024-06-14', '14:30:00', '16:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Shine' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '17:30:00', '20:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Pianist' AND theaters.num = 1;
+SELECT DATE '2024-06-14', '16:45:00', '19:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Godfather' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '20:30:00', '22:50:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Batman Begins' AND theaters.num = 1;
+SELECT DATE '2024-06-14', '20:15:00', '21:50:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Despicable Me' AND theaters.num = 1;
 
 
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '12:00:00', '13:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Hangover' AND theaters.num = 1;
+SELECT DATE '2024-06-15', '12:00:00', '14:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Goodfellas' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '14:15:00', '16:13:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Room' AND theaters.num = 1;
+SELECT DATE '2024-06-15', '15:00:00', '17:13:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Un long dimanche de fiançailles' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '16:45:00', '19:17:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Dark Knight' AND theaters.num = 1;
+SELECT DATE '2024-06-15', '17:45:00', '19:03:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Jungle Book' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '20:00:00', '21:39:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Blood Simple' AND theaters.num = 1;
+SELECT DATE '2024-06-15', '19:45:00', '21:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Zerkalo' AND theaters.num = 1;
 
 
 --SHOWINGS THEATER 1 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '12:00:00', '14:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Star Trek' AND theaters.num = 1;
+SELECT DATE '2024-06-16', '12:00:00', '14:04:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Star Wars: Episode V - The Empire Strikes Back' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '14:45:00', '16:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Vozvrashchenie' AND theaters.num = 1;
+SELECT DATE '2024-06-16', '14:45:00', '16:19:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Loving Vincent' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '17:15:00', '19:27:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'V for Vendetta' AND theaters.num = 1;
+SELECT DATE '2024-06-16', '17:00:00', '19:03:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'All That Jazz' AND theaters.num = 1;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '20:00:00', '21:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Brief Encounter' AND theaters.num = 1;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '22:00:00', '23:55:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Miller''s Crossing' AND theaters.num = 1;
+SELECT DATE '2024-06-16', '19:45:00', '21:50:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Apartment' AND theaters.num = 1;
 
 
 -- THEATER 2 SHOWINGS SYNTHETIC DATA
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '12:00:00', '13:43:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Toy Story 3' AND theaters.num = 2;
+SELECT DATE '2024-06-10', '12:00:00', '14:24:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ang-ma-reul bo-at-da' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '14:15:00', '16:25:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Cidade de Deus' AND theaters.num = 2;
+SELECT DATE '2024-06-10', '15:00:00', '16:44:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Harvey' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '17:00:00', '19:57:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Message' AND theaters.num = 2;
+SELECT DATE '2024-06-10', '17:15:00', '19:42:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Apocalypse Now' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '20:30:00', '23:02:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ford v Ferrari' AND theaters.num = 2;
+SELECT DATE '2024-06-10', '20:15:00', '22:11:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Joyeux Noël' AND theaters.num = 2;
 
 
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '12:00:00', '13:43:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Vampire Hunter D: Bloodlust' AND theaters.num = 2;
+SELECT DATE '2024-06-11', '12:00:00', '14:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'A Beautiful Mind' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '14:15:00', '16:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Babam ve Oglum' AND theaters.num = 2;
+SELECT DATE '2024-06-11', '14:45:00', '16:13:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Airplane!' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '16:45:00', '18:55:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Kai po che!' AND theaters.num = 2;
+SELECT DATE '2024-06-11', '16:45:00', '18:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Spoorloos' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '19:30:00', '22:11:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Anatomy of a Murder' AND theaters.num = 2;
+SELECT DATE '2024-06-11', '19:15:00', '20:56:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Sandlot' AND theaters.num = 2;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-11', '21:30:00', '23:13:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Bom Yeoareum Gaeul Gyeoul Geurigo Bom' AND theaters.num = 2;
 
 
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '12:00:00', '13:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dil Bechara' AND theaters.num = 2;
+SELECT DATE '2024-06-12', '12:00:00', '13:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Toy Story 2' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '14:15:00', '16:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Dark Knight Rises' AND theaters.num = 2;
+SELECT DATE '2024-06-12', '14:15:00', '15:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Vivre sa vie: Film en douze tableaux' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '17:30:00', '20:01:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Departed' AND theaters.num = 2;
+SELECT DATE '2024-06-12', '16:15:00', '18:02:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Terminator' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '20:45:00', '22:58:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Un long dimanche de fiançailles' AND theaters.num = 2;
+SELECT DATE '2024-06-12', '18:45:00', '20:25:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dark City' AND theaters.num = 2;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-12', '21:00:00', '23:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Man Who Would Be King' AND theaters.num = 2;
 
 
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '12:00:00', '14:02:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Glory' AND theaters.num = 2;
+SELECT DATE '2024-06-13', '12:00:00', '13:33:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Planes, Trains & Automobiles' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '14:45:00', '17:22:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Zodiac' AND theaters.num = 2;
+SELECT DATE '2024-06-13', '14:15:00', '16:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lat sau san taam' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '18:00:00', '19:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Bourne Identity' AND theaters.num = 2;
+SELECT DATE '2024-06-13', '17:00:00', '18:45:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Jules et Jim' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '20:30:00', '22:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sound of Metal' AND theaters.num = 2;
+SELECT DATE '2024-06-13', '19:15:00', '21:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Lives of Others' AND theaters.num = 2;
 
 
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '12:00:00', '14:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Boksuneun naui geot' AND theaters.num = 2;
+SELECT DATE '2024-06-14', '12:00:00', '14:12:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'V for Vendetta' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '14:45:00', '16:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lost Highway' AND theaters.num = 2;
+SELECT DATE '2024-06-14', '14:45:00', '16:06:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lola rennt' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '17:30:00', '19:10:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Rupan sansei: Kariosutoro no shiro' AND theaters.num = 2;
+SELECT DATE '2024-06-14', '16:45:00', '18:20:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Despicable Me' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '19:45:00', '21:21:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Mad Max 2' AND theaters.num = 2;
+SELECT DATE '2024-06-14', '19:00:00', '20:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Aguirre, der Zorn Gottes' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '22:00:00', '23:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Hiroshima mon amour' AND theaters.num = 2;
+SELECT DATE '2024-06-14', '21:15:00', '00:37:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Malcolm X' AND theaters.num = 2;
 
 
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '12:00:00', '14:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Quiet Man' AND theaters.num = 2;
+SELECT DATE '2024-06-15', '12:00:00', '13:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Bourne Identity' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '14:45:00', '18:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Schindler''s List' AND theaters.num = 2;
+SELECT DATE '2024-06-15', '14:30:00', '16:33:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Atonement' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '18:30:00', '22:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lawrence of Arabia' AND theaters.num = 2;
+SELECT DATE '2024-06-15', '17:15:00', '18:58:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Vampire Hunter D: Bloodlust' AND theaters.num = 2;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-15', '19:30:00', '23:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lawrence of Arabia' AND theaters.num = 2;
 
 
 --SHOWINGS THEATER 2 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '12:00:00', '13:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ratatouille' AND theaters.num = 2;
+SELECT DATE '2024-06-16', '12:00:00', '14:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Boogie Nights' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '14:30:00', '16:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'A Little Princess' AND theaters.num = 2;
+SELECT DATE '2024-06-16', '15:15:00', '18:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Fanny och Alexander' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '16:45:00', '18:38:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sabrina' AND theaters.num = 2;
+SELECT DATE '2024-06-16', '19:00:00', '21:08:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dead Poets Society' AND theaters.num = 2;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '19:15:00', '20:36:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'South Park: Bigger, Longer & Uncut' AND theaters.num = 2;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '21:15:00', '23:22:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Life of Pi' AND theaters.num = 2;
+SELECT DATE '2024-06-16', '21:45:00', '23:20:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Despicable Me' AND theaters.num = 2;
 
 
 -- THEATER 3 SHOWINGS SYNTHETIC DATA
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '12:00:00', '14:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Gladiator' AND theaters.num = 3;
+SELECT DATE '2024-06-10', '12:00:00', '14:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Crna macka, beli macor' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '15:15:00', '16:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The French Connection' AND theaters.num = 3;
+SELECT DATE '2024-06-10', '14:45:00', '16:47:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'A Streetcar Named Desire' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '17:30:00', '19:10:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Artist' AND theaters.num = 3;
+SELECT DATE '2024-06-10', '17:30:00', '19:16:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Kimi no na wa.' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '19:45:00', '21:50:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sen to Chihiro no kamikakushi' AND theaters.num = 3;
+SELECT DATE '2024-06-10', '20:00:00', '22:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Blue Velvet' AND theaters.num = 3;
 
 
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '12:00:00', '13:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'To Have and Have Not' AND theaters.num = 3;
+SELECT DATE '2024-06-11', '12:00:00', '14:27:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Vikram Vedha' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '14:15:00', '16:38:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Cast Away' AND theaters.num = 3;
+SELECT DATE '2024-06-11', '15:00:00', '16:34:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Jûbê ninpûchô' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '17:15:00', '18:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Life of Brian' AND theaters.num = 3;
+SELECT DATE '2024-06-11', '17:15:00', '19:12:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'M - Eine Stadt sucht einen Mörder' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '19:30:00', '22:38:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Short Cuts' AND theaters.num = 3;
+SELECT DATE '2024-06-11', '19:45:00', '21:19:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Boy in the Striped Pyjamas' AND theaters.num = 3;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-11', '22:00:00', '01:08:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Magnolia' AND theaters.num = 3;
 
 
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '12:00:00', '14:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'A Beautiful Mind' AND theaters.num = 3;
+SELECT DATE '2024-06-12', '12:00:00', '14:45:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Boyhood' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '14:45:00', '16:55:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Thor: Ragnarok' AND theaters.num = 3;
+SELECT DATE '2024-06-12', '15:15:00', '17:16:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Hotel Rwanda' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '17:30:00', '19:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Le samouraï' AND theaters.num = 3;
+SELECT DATE '2024-06-12', '18:00:00', '20:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Chhichhore' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '19:45:00', '22:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Thin Red Line' AND theaters.num = 3;
+SELECT DATE '2024-06-12', '21:00:00', '23:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'My Cousin Vinny' AND theaters.num = 3;
 
 
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '12:00:00', '13:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = '1917' AND theaters.num = 3;
+SELECT DATE '2024-06-13', '12:00:00', '13:50:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'True Grit' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '14:30:00', '16:19:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'On Golden Pond' AND theaters.num = 3;
+SELECT DATE '2024-06-13', '14:30:00', '15:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lola rennt' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '17:00:00', '19:10:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Thor: Ragnarok' AND theaters.num = 3;
+SELECT DATE '2024-06-13', '16:30:00', '17:56:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Brief Encounter' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '19:45:00', '21:28:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'My Left Foot: The Story of Christy Brown' AND theaters.num = 3;
+SELECT DATE '2024-06-13', '18:30:00', '20:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Deadpool' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '22:00:00', '00:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Platoon' AND theaters.num = 3;
+SELECT DATE '2024-06-13', '21:00:00', '00:48:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lawrence of Arabia' AND theaters.num = 3;
 
 
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '12:00:00', '13:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Tonari no Totoro' AND theaters.num = 3;
+SELECT DATE '2024-06-14', '12:00:00', '14:14:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Hustler' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '14:00:00', '15:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb' AND theaters.num = 3;
+SELECT DATE '2024-06-14', '14:45:00', '16:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'This Is England' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '16:15:00', '17:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'God''s Own Country' AND theaters.num = 3;
+SELECT DATE '2024-06-14', '17:00:00', '18:38:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Toki o kakeru shôjo' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '18:30:00', '20:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Les quatre cents coups' AND theaters.num = 3;
+SELECT DATE '2024-06-14', '19:15:00', '20:53:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'La double vie de Véronique' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '20:45:00', '22:12:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'City Lights' AND theaters.num = 3;
+SELECT DATE '2024-06-14', '21:30:00', '00:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Boyhood' AND theaters.num = 3;
 
 
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '12:00:00', '13:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Aladdin' AND theaters.num = 3;
+SELECT DATE '2024-06-15', '12:00:00', '13:37:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Out of the Past' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '14:00:00', '15:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Pink Floyd: The Wall' AND theaters.num = 3;
+SELECT DATE '2024-06-15', '14:15:00', '15:45:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Tôkyô goddofâzâzu' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '16:15:00', '17:58:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Singin'' in the Rain' AND theaters.num = 3;
+SELECT DATE '2024-06-15', '16:15:00', '17:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sunrise: A Song of Two Humans' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '18:30:00', '20:06:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Miracle on 34th Street' AND theaters.num = 3;
+SELECT DATE '2024-06-15', '18:30:00', '20:37:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Amour' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '20:45:00', '23:08:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Avengers' AND theaters.num = 3;
+SELECT DATE '2024-06-15', '21:15:00', '22:46:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Viskningar och rop' AND theaters.num = 3;
 
 
 --SHOWINGS THEATER 3 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '12:00:00', '14:01:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Network' AND theaters.num = 3;
+SELECT DATE '2024-06-16', '12:00:00', '14:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Das Experiment' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '14:45:00', '16:20:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'El ángel exterminador' AND theaters.num = 3;
+SELECT DATE '2024-06-16', '14:30:00', '16:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dial M for Murder' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '17:00:00', '19:05:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dog Day Afternoon' AND theaters.num = 3;
+SELECT DATE '2024-06-16', '16:45:00', '19:29:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Blade Runner 2049' AND theaters.num = 3;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '19:45:00', '21:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Le locataire' AND theaters.num = 3;
+SELECT DATE '2024-06-16', '20:00:00', '22:20:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'La Vie En Rose' AND theaters.num = 3;
 
 
 -- THEATER 4 SHOWINGS SYNTHETIC DATA
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '12:00:00', '13:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Strangers on a Train' AND theaters.num = 4;
+SELECT DATE '2024-06-10', '12:00:00', '13:29:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Hotaru no haka' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '14:15:00', '16:44:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Das Boot' AND theaters.num = 4;
+SELECT DATE '2024-06-10', '14:00:00', '16:02:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lord of War' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '17:15:00', '20:13:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Casino' AND theaters.num = 4;
+SELECT DATE '2024-06-10', '16:45:00', '19:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Bhaag Milkha Bhaag' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '20:45:00', '22:39:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Imitation Game' AND theaters.num = 4;
+SELECT DATE '2024-06-10', '20:30:00', '21:58:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Airplane!' AND theaters.num = 4;
 
 
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '12:00:00', '13:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'End of Watch' AND theaters.num = 4;
+SELECT DATE '2024-06-11', '12:00:00', '15:27:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Shichinin no samurai' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '14:30:00', '17:05:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Gladiator' AND theaters.num = 4;
+SELECT DATE '2024-06-11', '16:00:00', '18:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Cool Hand Luke' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '17:45:00', '20:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Once Upon a Time in the West' AND theaters.num = 4;
+SELECT DATE '2024-06-11', '18:45:00', '21:12:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sleepers' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '21:00:00', '23:15:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Bridges of Madison County' AND theaters.num = 4;
+SELECT DATE '2024-06-11', '21:45:00', '23:48:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Seven Pounds' AND theaters.num = 4;
 
 
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '12:00:00', '14:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Il buono, il brutto, il cattivo' AND theaters.num = 4;
+SELECT DATE '2024-06-12', '12:00:00', '13:53:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Edge of Tomorrow' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '15:15:00', '17:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Salinui chueok' AND theaters.num = 4;
+SELECT DATE '2024-06-12', '14:30:00', '16:10:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Innocents' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '18:00:00', '19:29:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Office Space' AND theaters.num = 4;
+SELECT DATE '2024-06-12', '16:45:00', '18:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'WALL·E' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '20:00:00', '21:43:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ferris Bueller''s Day Off' AND theaters.num = 4;
+SELECT DATE '2024-06-12', '19:00:00', '21:03:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Last King of Scotland' AND theaters.num = 4;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-12', '21:45:00', '23:57:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Naked' AND theaters.num = 4;
 
 
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '12:00:00', '14:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Crna macka, beli macor' AND theaters.num = 4;
+SELECT DATE '2024-06-13', '12:00:00', '14:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = '8½' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '14:45:00', '16:27:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Notorious' AND theaters.num = 4;
+SELECT DATE '2024-06-13', '15:00:00', '16:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Wrestler' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '17:00:00', '19:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Andaz Apna Apna' AND theaters.num = 4;
+SELECT DATE '2024-06-13', '17:30:00', '19:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Back to the Future' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '20:15:00', '21:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Le dîner de cons' AND theaters.num = 4;
+SELECT DATE '2024-06-13', '20:00:00', '22:19:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Mary Poppins' AND theaters.num = 4;
 
 
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '12:00:00', '13:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Papurika' AND theaters.num = 4;
+SELECT DATE '2024-06-14', '12:00:00', '13:50:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'La passion de Jeanne d''Arc' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '14:00:00', '16:12:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Die Hard' AND theaters.num = 4;
+SELECT DATE '2024-06-14', '14:30:00', '16:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Big Fish' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '16:45:00', '19:06:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Mr. Nobody' AND theaters.num = 4;
+SELECT DATE '2024-06-14', '17:15:00', '19:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Inherit the Wind' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '19:45:00', '21:28:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Majo no takkyûbin' AND theaters.num = 4;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '22:00:00', '23:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Trois couleurs: Blanc' AND theaters.num = 4;
+SELECT DATE '2024-06-14', '20:00:00', '22:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ba wang bie ji' AND theaters.num = 4;
 
 
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '12:00:00', '13:46:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sing Street' AND theaters.num = 4;
+SELECT DATE '2024-06-15', '12:00:00', '13:43:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ferris Bueller''s Day Off' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '14:30:00', '16:54:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Martian' AND theaters.num = 4;
+SELECT DATE '2024-06-15', '14:15:00', '16:11:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Witness for the Prosecution' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '17:30:00', '19:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'La piel que habito' AND theaters.num = 4;
+SELECT DATE '2024-06-15', '16:45:00', '18:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Kaze tachinu' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '20:00:00', '22:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Day of the Jackal' AND theaters.num = 4;
+SELECT DATE '2024-06-15', '19:30:00', '21:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Hacksaw Ridge' AND theaters.num = 4;
 
 
 --SHOWINGS THEATER 4 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '12:00:00', '13:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Rupan sansei: Kariosutoro no shiro' AND theaters.num = 4;
+SELECT DATE '2024-06-16', '12:00:00', '15:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dilwale Dulhania Le Jayenge' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '14:15:00', '17:24:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Green Mile' AND theaters.num = 4;
+SELECT DATE '2024-06-16', '15:45:00', '18:31:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Curious Case of Benjamin Button' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '18:00:00', '19:36:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Persepolis' AND theaters.num = 4;
+SELECT DATE '2024-06-16', '19:15:00', '21:07:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Straight Story' AND theaters.num = 4;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '20:15:00', '21:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'God''s Own Country' AND theaters.num = 4;
+SELECT DATE '2024-06-16', '21:45:00', '00:58:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Right Stuff' AND theaters.num = 4;
 
 
 -- THEATER 5 SHOWINGS SYNTHETIC DATA
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '12:00:00', '15:29:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Irishman' AND theaters.num = 5;
+SELECT DATE '2024-06-10', '12:00:00', '13:52:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Philadelphia Story' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '16:00:00', '18:38:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Where Eagles Dare' AND theaters.num = 5;
+SELECT DATE '2024-06-10', '14:30:00', '16:06:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Short Term 12' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '19:15:00', '20:47:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'His Girl Friday' AND theaters.num = 5;
+SELECT DATE '2024-06-10', '16:45:00', '18:58:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Creed' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-10', '21:30:00', '23:25:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Nebraska' AND theaters.num = 5;
+SELECT DATE '2024-06-10', '19:30:00', '21:42:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Star Trek Into Darkness' AND theaters.num = 5;
 
 
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '12:00:00', '14:10:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Airlift' AND theaters.num = 5;
+SELECT DATE '2024-06-11', '12:00:00', '13:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Eastern Promises' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '14:45:00', '16:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Before Sunrise' AND theaters.num = 5;
+SELECT DATE '2024-06-11', '14:15:00', '16:18:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Atonement' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '17:00:00', '18:36:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sweet Smell of Success' AND theaters.num = 5;
+SELECT DATE '2024-06-11', '17:00:00', '19:04:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Sin City' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '19:15:00', '21:27:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Call Me by Your Name' AND theaters.num = 5;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-11', '22:00:00', '01:21:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Giant' AND theaters.num = 5;
+SELECT DATE '2024-06-11', '19:45:00', '22:43:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Lord of the Rings: The Fellowship of the Ring' AND theaters.num = 5;
 
 
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '12:00:00', '13:24:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Evil Dead II' AND theaters.num = 5;
+SELECT DATE '2024-06-12', '12:00:00', '13:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Little Miss Sunshine' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '14:00:00', '15:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb' AND theaters.num = 5;
+SELECT DATE '2024-06-12', '14:15:00', '16:46:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Barfi!' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '16:15:00', '17:46:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Smultronstället' AND theaters.num = 5;
+SELECT DATE '2024-06-12', '17:30:00', '19:49:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'As Good as It Gets' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '18:30:00', '20:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lord of War' AND theaters.num = 5;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-12', '21:15:00', '23:20:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Philadelphia' AND theaters.num = 5;
+SELECT DATE '2024-06-12', '20:30:00', '22:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Being John Malkovich' AND theaters.num = 5;
 
 
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '12:00:00', '14:14:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Only the Brave' AND theaters.num = 5;
+SELECT DATE '2024-06-13', '12:00:00', '13:40:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'To Have and Have Not' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '14:45:00', '16:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Le notti di Cabiria' AND theaters.num = 5;
+SELECT DATE '2024-06-13', '14:15:00', '15:45:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Taken' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '17:15:00', '20:26:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Gandhi' AND theaters.num = 5;
+SELECT DATE '2024-06-13', '16:15:00', '17:57:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Chung Hing sam lam' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-13', '21:00:00', '23:32:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Dark Knight' AND theaters.num = 5;
+SELECT DATE '2024-06-13', '18:30:00', '20:05:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Pink Floyd: The Wall' AND theaters.num = 5;
+
+
+INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
+SELECT DATE '2024-06-13', '20:45:00', '23:09:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Kelly''s Heroes' AND theaters.num = 5;
 
 
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '12:00:00', '14:06:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Manchurian Candidate' AND theaters.num = 5;
+SELECT DATE '2024-06-14', '12:00:00', '13:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Strangers on a Train' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '14:45:00', '16:59:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lost Highway' AND theaters.num = 5;
+SELECT DATE '2024-06-14', '14:15:00', '16:54:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Rockstar' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '17:30:00', '19:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Shrek' AND theaters.num = 5;
+SELECT DATE '2024-06-14', '17:30:00', '19:34:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Elephant Man' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '19:30:00', '21:29:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Untouchables' AND theaters.num = 5;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-14', '22:00:00', '00:51:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Ba wang bie ji' AND theaters.num = 5;
+SELECT DATE '2024-06-14', '20:15:00', '22:23:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Lat sau san taam' AND theaters.num = 5;
 
 
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '12:00:00', '13:31:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Watership Down' AND theaters.num = 5;
+SELECT DATE '2024-06-15', '12:00:00', '13:35:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = '(500) Days of Summer' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '14:15:00', '16:10:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Tropa de Elite' AND theaters.num = 5;
+SELECT DATE '2024-06-15', '14:15:00', '16:31:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'North by Northwest' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '16:45:00', '18:42:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Fall' AND theaters.num = 5;
+SELECT DATE '2024-06-15', '17:15:00', '19:28:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Rogue One' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-15', '19:15:00', '22:27:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Veer-Zaara' AND theaters.num = 5;
+SELECT DATE '2024-06-15', '20:00:00', '21:33:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Jeux d''enfants' AND theaters.num = 5;
 
 
 --SHOWINGS THEATER 5 FOR 2024-06-10 SYNTHETIC DATA
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '12:00:00', '14:11:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'X: First Class' AND theaters.num = 5;
+SELECT DATE '2024-06-16', '12:00:00', '14:17:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Just Mercy' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '14:45:00', '16:30:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Jules et Jim' AND theaters.num = 5;
+SELECT DATE '2024-06-16', '15:00:00', '17:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Il buono, il brutto, il cattivo' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '17:00:00', '18:41:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Isle of Dogs' AND theaters.num = 5;
+SELECT DATE '2024-06-16', '18:15:00', '20:54:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Baby' AND theaters.num = 5;
 
 
 INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '19:15:00', '20:56:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'Todo sobre mi madre' AND theaters.num = 5;
-
-
-INSERT INTO showings (showing_date, start_time, end_time, movie_id, theater_id)
-SELECT DATE '2024-06-16', '21:30:00', '23:36:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'The Fifth Element' AND theaters.num = 5;
+SELECT DATE '2024-06-16', '21:30:00', '23:00:00', movies.id, theaters.id FROM movies, theaters WHERE movies.title = 'À bout de souffle' AND theaters.num = 5;
 
 
 -- FAKE USER SYNTHETIC DATA
-INSERT INTO users (name, email, password_hash) VALUES ('fake_user_name', 'fake_user_email@generic_email.com', 'scrypt:32768:8:1$tAN1atRJdraxqNyj$45fd45bd92ad85eba113b33ae86a7dce6c0bd5a5b70f940bea9b2a60a25a0adf1abec27fcc289312b40b907c1d92b8372b024797194e12120526fecbfb92b832');-- RESERVATIONS SYNTHETIC DATA
+INSERT INTO users (name, email, password_hash) VALUES ('fake_user_name', 'fakeuser.email@genericemail.com', 'scrypt:32768:8:1$tAN1atRJdraxqNyj$45fd45bd92ad85eba113b33ae86a7dce6c0bd5a5b70f940bea9b2a60a25a0adf1abec27fcc289312b40b907c1d92b8372b024797194e12120526fecbfb92b832');-- RESERVATIONS SYNTHETIC DATA
 -- SEAT RESERVATIONS SYNTHETIC DATA

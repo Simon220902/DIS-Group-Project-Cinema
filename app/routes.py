@@ -89,11 +89,11 @@ def reservation(showing_id, seat_ids):
         (validbool, errmsg) = model.is_reservation_valid(showing_id, seat_ids)
         if validbool:
             model.insert_reservation(showing_id, seat_ids, current_user.get_id())
-            return render_template("succ_reservation.html", movie_title=movie.title, date=showing.showing_date, start_time=showing.start_time, end_time=showing.end_time, seats_row_number=seats_row_number) # TODO: GO TO SUCCESS PAGE FOR RESERVATION
+            return render_template("succ_reservation.html", movie_title=movie.title, date=showing.showing_date, start_time=showing.start_time, end_time=showing.end_time, seats_row_number=seats_row_number, theater_number=showing.theater.num) # TODO: GO TO SUCCESS PAGE FOR RESERVATION
         else:
             return render_template('failure_page.html', failure_message = errmsg)
     else:
-        return render_template("reservation.html", movie_title=movie.title, date=showing.showing_date, start_time=showing.start_time, end_time=showing.end_time, seats_row_number=seats_row_number)
+        return render_template("reservation.html", movie_title=movie.title, date=showing.showing_date, start_time=showing.start_time, end_time=showing.end_time, seats_row_number=seats_row_number, theater_number=showing.theater.num)
 
 @app.route('/logout')
 def logout():
