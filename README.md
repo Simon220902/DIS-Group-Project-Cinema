@@ -1,209 +1,68 @@
 # DIS Group project: Cinema reservation page
 
+## ER-diagram
 ![ER_DIS_cinema.png](/ER_DIS_cinema.png)
 
-## Requirements:
+## Technical setup
+### Requirements:
 Run the code below to install the necessary modules.
+
     pip install -r requirements.txt
 
 
-## Database init
-1. set the database in __init__.py file.
-2. run schema.sql, schema_ins.sql, schema_upd.sql in your database
-3. run sql_ddl/ddl-customers-001-add.sql in your database.
+### Database init
+1. Replace {username} with your database username and {databasename} with the name of your database in \_\_init\_\_.py file.
+2. Run the sql files replacing {username} with your database username and {databasename} with the name of your database in the below collective statement.
 
-Example: 
+Collected psql statement:
 
-    psql -d{database} -U{user} -W -f schema.sql
+    psql -U {username} -d {databasename} -q -f sql_files/create_tables.sql -f sql_files/insert_movies.sql -f sql_files/insert_directors.sql -f sql_files/insert_stars.sql -f sql_files/update_movies_director.sql -f sql_files/insert_starsin.sql -f sql_files/generate_synthetic_data.sql
    
-## Running flask
-### The python way
+### Running flask
+#### The python way
 
     python3 run.py
 
-### The flask way.
+#### The flask way.
 
     export FLASK_APP=run.py
-    export FLASK_DEBUG=1           (Replaces export FLASK_ENV=development)
-    export FLASK_RUN_PORT=5004     (Optional if you want to change port numbe4. Default port is port 5000.)
     flask run
 
-#### notes
-For Windows you may have to use the SET command instead of EXPORT. Ex set FLASK_APP=run.py; set FLASK_DEBUG=1; flask run. This worked for me. Also remeber to add the path to your postgres bin-directory in order to run (SQL interpreter) and other postgres programs in any shell.
+### How to use
+We have generated an example user:
 
+    Email: fakeuser.email@genericemail.com
+    Password: password
 
-### The flask way with a virual environment.
+You can also register your own user.
 
-Set up virtual environment as specified in https://flask.palletsprojects.com/en/1.1.x/installation/ (OSX/WINDOWS)
-vitualenv may be bundled with python.
+The web-app consists of a movie page for the movies shown in the cinema ordered by showing date and time.
 
-#### OSX: 
+Each movie has a page with some info about the movie and the its showings.
 
-    mkdir myproject
-    cd myproject
+For each showing there is a view of the seats, where red resembles already reserved seats and then a user can select seats by clicking (which turns them blue) and then click reserve.
 
-Create virtual environment in folder
+This brings the user onto a reservation confirmation page where when the user confirms the reservation the reservation is registered in the database.
 
-    python3 -m venv .venv
+The user can see and delete their reservations on their user homepage which is accessed via. the link (with the username) in the top of the website.
 
-Activate virtual environment in folder
 
-    . .venv/bin/activate
+## Description of fulfillment of requirements
+### SQL queries
+#### CREATE
+We create tables in `sqlfiles/create_tables.sql` where we also make sure to model the weak relations using `ON DELETE CASADE`.
 
-Install flask
+#### INSERT
+We have multiple places where we use `INSERT` both when inserting the synthetic data (e.g. `insert_movies.sql`, `insert_directors.sql`, `insert_stars.sql`, `insert_starsin.sql` and `generate_synthetic_data.sql`) and multiple places in `models.py`.
 
-    pip install Flask
+#### UPDATE
+We only use update when updating the `director_id` column in the `movies` table. This is done in `update_movies_director.sql`.
 
-Set environment variables and start flask
+#### DELETE
+We have used `ON DELETE CASADE` in our `create_tables.sql` and when deleting a reservation in `models.py` we generate a delete statement to delete first the seat reservations and then the reservation. (Though the seat reservations would also be deleted even if we only deleted the reservation due to the added `ON DELTE CASCADE`).
 
-    export FLASK_APP=run.py
-    export FLASK_DEBUG=1           (Replaces export FLASK_ENV=development)
-    export FLASK_RUN_PORT=5000     (Optional if you want to change port number. Default port is port 5000.)
-    flask run
- 
+#### SELECT
+We use multiple `SELECT` statements in `models.py`.
 
-#### WINDOWS:
-
-Create virtual environment in folder
-
-    mkdir myproject
-    cd myproject
-    py -3 -m venv .venv
-
-Activate virtual environment in folder
-
-    .venv\Script\activate
-    pip install Flask
-
-Set environment variables and start flask
-
-    set FLASK_APP=run.py
-    set FLASK_DEBUG=1           (Replaces export FLASK_ENV=development)
-    set FLASK_RUN_PORT=5000     (Optional if you want to change port number. Default port is port 5000.)
-    flask run
-
-# Development
-### Rules:  
-
-1. To pick: Add your name. Pick one at the time, (pick only several when you break the rule). 
-2. Update progress. 
-3. Finalize ‘one at the time’.
-4. Commit to repository.
-
-## November 2023 DEVELOPMENT SPRINT (-APR2024)
-CM-3 Staring with a backlog spice. It is not understandable.
-
-### User stories:
-
-#### Customer role:
-
-##### Logging on
-
-CUS-1-2-2022(anders, 100%): List users and authenticate using the list. Status: List part drafted in template. CUS-1-2-2022 split in a database part CUS-1-2-2022 and a python part CUS-1-3-2024 SPIKE.
-
-CUS-1-3-2024(anders, 100%) python part of CUS-1-2-2022. Flask form direct (CUS-1-4-2024), Login class endpoint /direct, endpoint python code. SPIKE.
-
-CUS-1-4-2024(anders, 100%) flask part of CUS-1-2-2022. ListLogin flask form (LL) direct.
-
-#### Employee role:
-
-#### Tasks
-CM-2 (anders, ) Adding data to the database
-CM-3 (anders) Spike Back-log consolidation. Making sense of the back-log. cm-log.md now logs sprints. 
-
-
-## Back log of User stories (unfinished business).
-There is a dilemma. You want the current state of existing user stories. However a back log is also a repository of unfinished business. Decission 20231107: Maintain a consolidated respository of userstories along with the tasks. Have a Back log of user stories as unifinished business.
-
-### User stories:
-
-#### Customer role:
-
-
-##### Transfer
-
-CUS7: As a customer, I can transfer money from one of my accounts to another, so that I can make other operations with that money. CUS7-1 (100%); CUS7-3 (100%); CUS7-2 (100%); CUS7-4 (100%); CUS7-5 Moved to EUS-CUS7 (Employee manager) and EUS-CUS10 (selecting customer); CUS7-6 (0%)
-
-CUS7-6 (name, ): restrict from_accounts to employees manages accounts
-
-##### Investments
-
-CUS4: As a customer, I can see the consolidated summary of my investments at a given date, so that I can see how much money I have invested and the current value of these investments. SPLIT current date (CUS4-1; date part (CUS4-2), ER-relational part (CUS4-3 100%). CUS4-1 (60%); CUS4-4 (100%); CUS4-2 (0%); CUS4-3 (100%). 
-
-CUS4-1 (anders, 60%, SPLIT): investment list; list of each and a total; one line for each investment account; at a given date; accounts.html with overview just startt (5%); SPLIT; consolidate up to and including ‘dags dato’-current date.; SPLIT model part (CUS4-4 100%).
-
-CUS4-2 (name, ); date part; consolidated view at point in time.
-
-#### Checking account
-
-CUS8: As a customer i want to see the balance and details of my checking account. SPLIT into CUS8-1-2023, CUS8-2-2023 ,CUS8-3-2023, CUS8-4-2023, CUS8-5-2023, CUS8-6-2023.
-
-CUS8-1-2023 (name, %) checking account model-part (DML).
-
-CUS8-2-2023 (name, %) checking account template.
-
-CUS8-3-2023 (name, %) checking account controller-part.
-
-CUS8-4-2023 (name, %) checking account detail-part model-part (SQL).
-
-CUS8-5-2023 (name, %)  checking account detail-part template.
-
-CUS8-6-2023 (name, %) detail-part controller-part.
-
-##### Logging on
-
-CUS1: As a customer, I can log in and log out of the system, so that my information in the bank is only accessible to me. CUS-1-1-2022 done; CUS-1-2-2022 started 10%.
-
-CUS-1-2-2022(anders, 10%): List users and authenticate using the list. Status: List part drafted in template.
-
-
-### Employee role:
-
-#### Transfer
-
-EUS-CUS7: As en employee i can transfer money between ccounts I manage, so in order to provide service managing accounts. EUS-CUS7-1. SQL part(100%). EUS-CUS7-2 (100%). Transfer between managed accounts. EUS-CUS7-3 Not started.
-
-EUS-CUS7-3 (name). Customer based transfer (requires EUS-CUS10)
-
-#### Chose customer
-
-EUS-CUS10 : As an employee, I can recieve money for deposit to a customer account, so that the customer can have it in a safe place at the bank. Employee/counter utility; Employee must chose the customer. EUS-CUS10-1 (not started); EUS-CUS10-2 (not started); EUS-CUS10-3 (100%) ER to relational part. 
-
-EUS-CUS10-1 (name): CUS10 moved to employee; status 0% but CUS7 can be used as start.
-
-EUS-CUS10-2 (name): Authentication part
-
-#### Add and delete customers
-EUS3: As a bank employee, I can add or delete customers and their accounts in the system, so that I can keep track of the my customers and the bank products they are using.
-EUS3 (complex, SPLIT, 5 parts 40%): Complex story. SPLIT. Only employees should have acces to this story).  EUS3-1 (100%) register page; EUS3-2(name) mmoney accounts; EUS3-3(name) unregister; EUS3-4(name) authenticate; EUS3-5(100%) ER to relational part.
-
-EUS3-2 (name) add and remove money accounts for customers
-
-EUS3-3 (name) un-register page implements deleting a customer along with the accounts
-
-EUS3-4 (name) authentication against employee of EUS3.
-
-
-#### Certificate of deposits
-
-EUS6: As a bank employee, I can create a new CD (certificate of deposite) for one of my customers and associate it to the customer's investment account, so that I can facilitate investments and attract money to the bank. EUS6-1 (name); EUS6-2 (100%) ER to relational part.
-
-EUS6-1 (name, 0%) Flask part
-
-#### Accounts
-EUS11: as an employee i have access to specific customer accounts, so the employee can manage the customer. Thoughts: SQL. The data model maps employees to customer accounts. The employee could be mapped to a customer.
-
-EUS11-1 (name, 0%) Flask part
-
-EUS11-2 (name, 0%) ER to relational part.
-
-
-##### Logging on
-
-#### Tasks:
-
-MVC1-2 (name, ) navigation
-CM-1 (name, ) adjusting technical debt
-CM-2 (name, ) Adding data to the database
-CM-3 (name, ) dokumentation spikes
-
+### RegEx
+In `forms.py` we have added our own email validator (which is simply a regular expression) which we based on the description found [Wiki on email addresses](https://en.wikipedia.org/wiki/Email_address). Though we only support the followin TLDs `(com|org|net|int|edu|gov|mil|us|dk|se|no)`.
