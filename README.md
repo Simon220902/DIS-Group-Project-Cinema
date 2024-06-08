@@ -66,3 +66,5 @@ We use multiple `SELECT` statements in `models.py`.
 
 ### RegEx
 In `forms.py` we have added our own email validator (which is simply a regular expression) which we based on the description found [Wiki on email addresses](https://en.wikipedia.org/wiki/Email_address). Though we only support the followin TLDs `(com|org|net|int|edu|gov|mil|us|dk|se|no)`.
+
+We also used a regular expression in `extract_IMDB_info.ipynb` to change the poster links from `imdb_top_1000.csv`to some with higher resolution. Where the change necessarry to the link was gathered from getting an example response from [OMDb API](https://www.omdbapi.com/).

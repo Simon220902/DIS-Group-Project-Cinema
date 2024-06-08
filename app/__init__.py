@@ -5,7 +5,7 @@ from flask_login import LoginManager
 
 app = Flask(__name__)
 app.config.from_object(Config)
-db = psycopg.connect("dbname=cinema user=simonlykkeandersen")
+db = psycopg.connect("dbname={databasename} user={username}")
 login = LoginManager(app)
 login.login_view = 'login'
 
