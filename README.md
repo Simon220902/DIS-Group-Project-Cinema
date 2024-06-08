@@ -1,4 +1,5 @@
 # DIS Group project: Cinema reservation page
+### By Mark Brandt {jvq317}, Rasmus Kiel {zch403} & Simon Lykke Andersen {sxd682}
 
 ## ER-diagram
 ![ER_DIS_cinema.png](/ER_DIS_cinema.png)
