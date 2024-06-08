@@ -5,7 +5,12 @@
 ![ER_DIS_cinema.png](/ER_DIS_cinema.png)
 
 ## Technical setup
-### Requirements:
+### Virtual environment
+If you want to use a virtual environment you can run.
+
+    python3 -m venv venv
+
+### Requirements
 Run the code below to install the necessary modules.
 
     pip install -r requirements.txt
